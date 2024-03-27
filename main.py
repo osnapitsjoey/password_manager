@@ -122,7 +122,7 @@ def search():
             data = json.load(search_file)
     except FileNotFoundError:
         messagebox.showwarning(
-            title="oops", message="You do not have any saved passwords."
+            title="Error", message="You do not have any saved passwords."
         )
     else:
         if website in data:
